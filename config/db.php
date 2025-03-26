@@ -4,7 +4,7 @@
  *
  * Filename:        db.php
  * Location:        config/
- * Project:         XXX-SaaS-Vanilla-MVC-SN
+ * Project:         XXX-SaaS-Vanilla-MVC-S1
  * Date Created:    2025-03-13
  *
  * Author:          YOUR NAME

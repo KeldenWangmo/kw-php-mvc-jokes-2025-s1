@@ -4,7 +4,7 @@
  *
  * Filename:        template.php
  * Location:        public
- * Project:         XXX-SaaS-Vanilla-MVC-SN
+ * Project:         XXX-SaaS-Vanilla-MVC-S1
  * Date Created:    2025-03-13
  *
  * Author:          Adrian Gould <Adrian.Gould@nmtafe.wa.edu.au>

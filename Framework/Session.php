@@ -7,7 +7,7 @@
  *
  * Filename:        Session.php
  * Location:        /Framework/
- * Project:         XXX-SaaS-Vanilla-MVC-YYYY-SN
+ * Project:         XXX-SaaS-Vanilla-MVC-YYYY-S1
  * Date Created:    13/03/2025
  *
  * Author:          Adrian Gould <Adrian.Gould@nmtafe.wa.edu.au>
