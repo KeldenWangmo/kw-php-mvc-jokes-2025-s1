@@ -7,11 +7,11 @@
  *
  * Filename:        UserController.php
  * Location:        App/Controllers
- * Project:         SaaS-Vanilla-MVC
+ * Project:         kw-php-mvc-jokes-2025-s1
  * Date Created:    20/08/2024
+ * Modified date:   02/04/2025
  *
- * Author:          Adrian Gould <Adrian.Gould@nmtafe.wa.edu.au>
- *
+ * Author:          Kelden Wangmo <20070505@tafe.wa.edu.au>
  */
 
 namespace App\Controllers;
@@ -72,7 +72,9 @@ class UserController
      */
     public function store()
     {
-        $name = $_POST['name'] ?? null;
+        $given_name = $_POST['given_name'] ?? null;
+        $family_name = $_POST['family_name'] ?? null;
+        $nickname = $_POST['nickname'] ?? null;
         $email = $_POST['email'] ?? null;
         $city = $_POST['city'] ?? null;
         $state = $_POST['state'] ?? null;
@@ -86,8 +88,14 @@ class UserController
             $errors['email'] = 'Please enter a valid email address';
         }
 
-        if (!Validation::string($name, 2, 50)) {
-            $errors['name'] = 'Name must be between 2 and 50 characters';
+        if (!Validation::string($given_name, 2, 50)) {
+            $errors['given_name'] = 'Given Name must be between 2 and 50 characters';
+        }
+        if (!Validation::string($family_name, 2, 50)) {
+            $errors['family_name'] = 'Family Name must be between 2 and 50 characters';
+        }
+        if (!Validation::string($nickname, 2, 50)) {
+            $errors['nickname'] = 'Family Name must be between 2 and 50 characters';
         }
 
         if (!Validation::string($password, 6, 50)) {
@@ -102,7 +110,9 @@ class UserController
             loadView('users/create', [
                 'errors' => $errors,
                 'user' => [
-                    'name' => $name,
+                    'given_name'=>$given_name,
+                    'family_name'=>$family_name,
+                    'nickname' => $nickname,
                     'email' => $email,
                     'city' => $city,
                     'state' => $state,
@@ -128,14 +138,16 @@ class UserController
 
         // Create user account
         $params = [
-            'name' => $name,
+            'given_name'=>$given_name,
+            'family_name'=>$family_name,
+            'nickname' => $nickname,
             'email' => $email,
             'city' => $city,
             'state' => $state,
             'password' => password_hash($password, PASSWORD_DEFAULT)
         ];
 
-        $this->db->query('INSERT INTO users (name, email, city, state, password) VALUES (:name, :email, :city, :state, :password)', $params);
+        $this->db->query('INSERT INTO users (given_name, family_name, nickname, email, city, state, password) VALUES (:given_name, :family_name, :nickname, :email, :city, :state, :password)', $params);
 
         // Get new user ID
         $userId = $this->db->conn->lastInsertId();
@@ -143,7 +155,9 @@ class UserController
         // Set user session
         Session::set('user', [
             'id' => $userId,
-            'name' => $name,
+            'given_name'=>$given_name,
+            'family_name'=>$family_name,
+            'nickname' => $nickname,
             'email' => $email,
             'city' => $city,
             'state' => $state
@@ -223,7 +237,7 @@ class UserController
         // Set user session
         Session::set('user', [
             'id' => $user->id,
-            'name' => $user->name,
+            'name' => $user->given_name,
             'email' => $user->email,
             'city' => $user->city,
             'state' => $user->state

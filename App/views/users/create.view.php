@@ -30,11 +30,26 @@ loadPartial('navigation'); ?>
             <form method="POST" action="/auth/register">
 
                 <section class="mb-4">
-                    <label for="Name" class="mt-4 pb-1">Name:</label>
-                    <input type="text" id="Name"
-                           name="name" placeholder="Full Name"
+                    <label for="Given Name" class="mt-4 pb-1">Given Name:</label>
+                    <input type="text" id="GivenName"
+                           name="given_name" placeholder="Given Name"
                            class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
-                           value="<?= $user['name'] ?? '' ?>"/>
+                           value="<?= $user['given_name'] ?? '' ?>"/>
+                </section>
+
+                <section class="mb-4">
+                    <label for="Family Name" class="mt-4 pb-1">Family Name:</label>
+                    <input type="text" id="FamilyName"
+                           name="family_name" placeholder="Family Name"
+                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
+                           value="<?= $user['family_name'] ?? '' ?>"/>
+                </section>
+                <section class="mb-4">
+                    <label for="Nickname" class="mt-4 pb-1">Nickname:</label>
+                    <input type="text" id="Nickname"
+                           name="nickname" placeholder="Nickname (Preferred name)"
+                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
+                           value="<?= $user['nickname'] ?? 'given_name' ?>"/>
                 </section>
 
                 <section class="mb-4">
@@ -50,7 +65,7 @@ loadPartial('navigation'); ?>
                     <input type="text" id="City"
                            name="city" placeholder="City"
                            class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
-                           value="<?= $user['city'] ?? '' ?>"/>
+                           value="<?= $user['city'] ?? 'Unknown' ?>"/>
                 </section>
 
                 <section class="mb-4">
@@ -58,7 +73,15 @@ loadPartial('navigation'); ?>
                     <input type="text" id="State"
                            name="state" placeholder="State"
                            class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
-                           value="<?= $user['state'] ?? '' ?>"/>
+                           value="<?= $user['state'] ?? 'Unknown' ?>"/>
+                </section>
+
+                <section class="mb-4">
+                    <label for="Country" class="mt-4 pb-1">Country:</label>
+                    <input type="text" id="Country"
+                           name="country" placeholder="Enter country ..."
+                           class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
+                           value="<?= $user['country'] ?? 'Unknown' ?>"/>
                 </section>
 
                 <section class="mb-4">

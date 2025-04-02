@@ -1,5 +1,5 @@
 {
-  "name": "adygcode/xxx-saas-vanilla-mvc-yyy-sn",
+  "name": "keldenwangmo/kw-saas-vanilla-mvc-2025-s1",
   "description": "Simple PHP MVC & TailwindCSS Application Template",
   "type": "project",
   "version": "1.1.0",
@@ -16,9 +16,9 @@
   "license": "SEE LICENSE IN Licence.md",
   "authors": [
     {
-      "name": "Adrian Gould",
-      "email": "adrian.gould@nmtafe.wa.edu.au",
-      "homepage": "https://adygcode.github.io",
+      "name": "Kelden Wangmo",
+      "email": "20070505@tafe.wa.edu.au",
+      "homepage": "https://keldenwangmo.github.io",
       "role": "Developer"
     },
     {

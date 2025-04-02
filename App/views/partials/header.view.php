@@ -3,11 +3,11 @@
  * HTML Template using TailwindCSS
  *
  * Filename:        template.php
- * Location:        public
+ * Location:        App/views/partial
  * Project:         XXX-SaaS-Vanilla-MVC-S1
  * Date Created:    2025-03-13
- *
- * Author:          Adrian Gould <Adrian.Gould@nmtafe.wa.edu.au>
+ * Date Modified:   2025-04-02
+ * Author:          Kelden Wangmo <20070505@tafe.wa.edu.au>
  *
  */
 ?>
@@ -17,7 +17,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>XXX Simple MVC Demo</title>
+    <title>KW Simple MVC Demo</title>
 
     <!-- During DEVELOPMENT the src/source.css file is used -->
     <link rel="stylesheet" href="/src/source.css">
