@@ -1,9 +1,10 @@
 <a name="readme-top" id="readme-top"></a>
-# XXX SaaS Vanilla MVC YYYY SN
+# KW SaaS Vanilla MVC 2025 S1
 
-Base Code for a Vanilla PHP Micro-MVC Framework.
-
-Used by students at North Metropolitan TAFE for learning and assessment purposes.
+Using Vanilla PHP MVC framework to create a simple Jokes system application. 
+This application will allow users to register, log in and manage jokes.
+Additionally, registered users are allowed to be able to add, edit and delete jokes. 
+Appliication will be used by students at North Metropolitan TAFE for learning and assessment purposes.
 
 
 [![Forks][forks-shield]][forks-url] 
@@ -23,24 +24,23 @@ Used by students at North Metropolitan TAFE for learning and assessment purposes
 
 ## Definitions
 
-| Term                | Definition                                                                                                  |
-|---------------------|-------------------------------------------------------------------------------------------------------------|
-| BREAD               | Database operations to Browse, Read, Edit, Add and Delete data                                              |
-| CRUD                | More commonly used term over BREAD. Create (Add), Retrieve (Browse/Read), Update (Edit) and Delete (Delete) |
-| Relational Database | ...                                                                                                         |
-| One to One          | ...                                                                                                         |
-| One to Many         | ...                                                                                                         |
-| Many to Many        | ...                                                                                                         |
-| Polymorphism        | ...                                                                                                         |
-| MVC                 | ...                                                                                                         |
-| ...                 | ...                                                                                                         |
+| Term                | Definition                                                                                                                                         |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| BREAD               | Database operations to Browse, Read, Edit, Add and Delete data                                                                                     |
+| CRUD                | More commonly used term over BREAD. Create (Add), Retrieve (Browse/Read), Update (Edit) and Delete (Delete)                                        |
+| Relational Database | Type of database that organizes data into rows and columns, forms a table where data points relate to one another.                                 |
+| One to One          | Relationship where a single record in one table(Table A) is related to a single record in another table(Table B).                                  |
+| One to Many         | Relationship occurs when a single record from one table(Table A) is related to multiple records in another table(Table B).                         |
+| Many to Many        | Relationship occurs when multiple records in one table are related to multiple records in another table.                                           |
+| Polymorphism        | Polymorphism derived from Greek means "having many forms", allowing objects of different classes to respond differently based on the same message. |
+| MVC                 | Model-View-Controller is a software design pattern used for developing user interfaces.                                                            |
+| ...                 | ...                                                                                                                                                |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Description
+## Project Description
 
-This small demonstration application was developed to assist in the
-learning the process of developing a micro-framework.
+This mini application was developed using MVC to create a simple jokes system using PHP & SQL micro-framework.
 
 This code is based on the [Workopia Project](https://github.com/bradtraversy/workopia-php)
 Micro-MVC Framework from the [PHP From Scratch course](https://www.traversymedia.com/php-from-scratch),
@@ -66,15 +66,17 @@ TO DO: Add extra, or update the contents as needed, then remove this line.
 
 ## Installation
 
-> **CLI Shell**
+> **CLI(Command Line Interface) Shell**
 >
-> Instructions are given using the BASH or Git-BASH CLI only.
+> Install git and use Git-Bash use the link to install git on your local (Windows, macOS, Linux) machine https://git-scm.com/downloads
+> We can also use Git-Bash by adding it to your Terminal. Simply set up a new profile in the settings and add `bash.exe` from your ProgramData as your root folder
+> `C:\Laragon\bin\git\bin\bash.exe` - for local machines might defer based on your folder structure.
 
 > **Default Project Location**
 >
-> We presume you are using the bash shell within Windows Terminal and have a work folder called
+> Use the bash shell within Windows Terminal and have a work folder called
 `Source/Repos` in your account's
-> root folder (eg. `/c/Users/YourName/Source/Repos`).
+> root folder (eg.`/c/Users/YourName/Source/Repos`).
 
 > **Project Naming Requirements**
 >
@@ -83,7 +85,7 @@ TO DO: Add extra, or update the contents as needed, then remove this line.
 > - `YYYY` with the current year and
 > - `SN` with the current semester.
 >
-> For example: ajg-saas-vanilla-mvc-2025-s1
+> For example: xxx-saas-vanilla-mvc-2025-s1
 
 Clone the repository 
 [xxx-saas-vanilla-mvc-yyyy-sn](https://github.com/AdyGCode/xxx-saas-vanilla-mvc-yyyy-sn) 
@@ -176,7 +178,7 @@ TODO: More details on use for use in developing basic application using this cod
 
 ## Contact
 
-Adrian Gould - Adrian.Gould@nmtafe.wa.edu.au
+Kelden Wangmo - 20070505@tafe.wa.edu.au
 
 Project Link: https://github.com/AdyGCode/xxx-saas-vanilla-mvc-yyyy-sn
 
