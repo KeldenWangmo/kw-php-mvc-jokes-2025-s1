@@ -250,28 +250,28 @@ USE KW_SaaS_FED_2025_S1;
 -- The Password is Password1 hashed using the PHP password_hash() method.
 -- --------------------------------------------------------------------------------------------
 INSERT INTO `KW_SaaS_FED_2025_S1`.`users`
-VALUES (10, 'Administrator', 'admin@example.com',
+VALUES (10, 'Ad', 'Ministrator', 'Administrator', 'admin@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Perth', 'WA', 'Australia', '2000-01-01 00:00:01');
+        'Perth', 'WA', 'Australia', '2000-01-01 00:00:01', null);
 
 INSERT INTO `KW_SaaS_FED_2025_S1`.`users`
-VALUES (20, 'Adrian Gould', 'adrian@example.com',
+VALUES (20, 'Adrian', 'Gould', 'Adrian', 'adrian@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Perth', 'WA', 'Australia', '2024-01-01 10:30:01'),
-       (30, 'YOUR NAME', 'GIVEN_NAME@example.com',
+        'Perth', 'WA', 'Australia', '2024-01-01 10:30:01', null),
+       (30, 'Kelden', 'Wangmo', 'Kelden', 'kelden@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Perth', 'WA', 'Australia', '2024-08-10 16:11:43');
+        'Perth', 'WA', 'Australia', '2024-08-10 16:11:43', null);
 
 INSERT INTO `KW_SaaS_FED_2025_S1`.`users`
-VALUES (100, 'John Doe', 'user1@example.com',
+VALUES (100, 'John', 'Doe', 'John', 'user1@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Bunbury', 'WA', 'Australia', '2024-08-15 13:04:21'),
-       (101, 'Jane Doe', 'user2@example.com',
+        'Bunbury', 'WA', 'Australia', '2024-08-15 13:04:21', null),
+       (101, 'Jane', 'Doe', 'Jane', 'user2@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Melbourne', 'VIC', 'Australia', '2024-08-20 13:17:21'),
-       (102, 'Steve Smith', 'user3@example.com',
+        'Melbourne', 'VIC', 'Australia', '2024-08-20 13:17:21', null),
+       (102, 'Steve', 'Smith', 'Steve', 'user3@example.com',
         '$2y$10$4Ae3n2iQ0MwXMNz0UEmNne2PaNyfYsBFYb97nayHWTDCwpnuPi6f.',
-        'Adelaide', 'SA', 'Australia', '2024-08-20 17:59:13');
+        'Adelaide', 'SA', 'Australia', '2024-08-20 17:59:13', null);
 -- ====================================> END SECTION <=========================================
 
 
