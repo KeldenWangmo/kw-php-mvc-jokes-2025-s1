@@ -1,10 +1,10 @@
 <?php
 /**
- * HTML Template using TailwindCSS
+ * HTML Template using TailwindCSS for headers of the project
  *
- * Filename:        template.php
+ * Filename:        header.view.php
  * Location:        App/views/partial
- * Project:         XXX-SaaS-Vanilla-MVC-S1
+ * Project:         kw-php-mvc-jokes-2025-s1
  * Date Created:    2025-03-13
  * Date Modified:   2025-04-02
  * Author:          Kelden Wangmo <20070505@tafe.wa.edu.au>

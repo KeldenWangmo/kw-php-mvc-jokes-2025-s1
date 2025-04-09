@@ -1,13 +1,14 @@
 <?php
 /**
- * Home Page View
+ * Dashboard Page View
  *
- * Filename:        home.view.php
+ * Filename:        dashboard.view.php
  * Location:        /App/views
- * Project:         SaaS-Vanilla-MVC
+ * Project:         kw-php-mvc-jokes-2025-s1
  * Date Created:    23/08/2024
+ * Date Modified:   09/04/2025
  *
- * Author:          Adrian Gould <Adrian.Gould@nmtafe.wa.edu.au>
+ * Author:          Kelden Wangmo<20070505@tafe.wa.edu.au>
  *
  */
 

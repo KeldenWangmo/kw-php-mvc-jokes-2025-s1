@@ -7,11 +7,12 @@
  * KEEP LINE LENGTH TO NO MORE THAN 96 CHARACTERS
  *
  * Filename:        login.view.php
- * Location:        ${FILE_LOCATION}
- * Project:         SaaS-Vanilla-MVC
+ * Location:        App/views/users/
+ * Project:         kw-php-mvc-jokes-2025-s1
  * Date Created:    23/08/2024
+ * Date Modified:   09/04/2025
  *
- * Author:          Adrian Gould <Adrian.Gould@nmtafe.wa.edu.au>
+ * Author:          Kelden Wangmo <20070505@tafe.wa.edu.au>
  *
  */
 

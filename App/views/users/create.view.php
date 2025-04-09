@@ -49,7 +49,7 @@ loadPartial('navigation'); ?>
                     <input type="text" id="Nickname"
                            name="nickname" placeholder="Nickname (Preferred name)"
                            class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
-                           value="<?= $user['nickname'] ?? 'given_name' ?>"/>
+                           value="<?= $user['nickname'] ?? '' ?>"/>
                 </section>
 
                 <section class="mb-4">
@@ -62,10 +62,12 @@ loadPartial('navigation'); ?>
 
                 <section class="mb-4">
                     <label for="City" class="mt-4 pb-1">City:</label>
+
                     <input type="text" id="City"
                            name="city" placeholder="City"
                            class="w-full px-4 py-2 border border-b-zinc-300 rounded focus:outline-none"
                            value="<?= $user['city'] ?? 'Unknown' ?>"/>
+
                 </section>
 
                 <section class="mb-4">

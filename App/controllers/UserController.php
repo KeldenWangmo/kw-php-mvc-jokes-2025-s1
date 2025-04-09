@@ -94,8 +94,12 @@ class UserController
         if (!Validation::string($family_name, 2, 50)) {
             $errors['family_name'] = 'Family Name must be between 2 and 50 characters';
         }
-        if (!Validation::string($nickname, 2, 50)) {
-            $errors['nickname'] = 'Family Name must be between 2 and 50 characters';
+        /* (!Validation::string($nickname, 2, 50)) {
+            $errors['nickname'] = 'Nick Name must be between 2 and 50 characters';
+        }*/
+        // Checks to see if Nickname is empty, if empty given_name will replace nickname.
+        if (empty($nickname)){
+            $nickname= $given_name;
         }
 
         if (!Validation::string($password, 6, 50)) {
@@ -178,7 +182,8 @@ class UserController
         $params = session_get_cookie_params();
         setcookie('PHPSESSID', '', time() - 86400, $params['path'], $params['domain']);
 
-        redirect('/');
+        // Redirect logout session to Login page upon logout
+        redirect('/auth/login');
     }
 
     /**
@@ -242,7 +247,7 @@ class UserController
             'city' => $user->city,
             'state' => $user->state
         ]);
-
-        redirect('/');
+        // Redirect to dashboard when logging in
+        redirect('/dashboard');
     }
 }
